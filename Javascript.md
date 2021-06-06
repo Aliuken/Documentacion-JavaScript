@@ -774,10 +774,13 @@ function hacerCargo(cargo) {
 }
 ```
 
-Cuando finalice la operación la promesa lanzará alguna de las siguientes funciones: 
+Cuando finalice la operación la promesa lanzará alguna de las siguientes funciones:
 - En caso de que la operación haya ido bien, la proporcionada en el método then.
 - En caso de error, la proporcionada en el método catch.
 
+NOTA:
+- Se pueden encadenar múltiples llamadas a then() de distintas promises con un único catch() final
+- Esto es similar al comportamiento de Optional de Java, donde se encadenan múltiples map() con un único orElse()
 
 Ejemplo de uso de las Promises creadas:
 
